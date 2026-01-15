@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ensures proper rendering and touch zooming on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Profile | Harshavardhan Desai</title>
+</head>
+<body>
+
+    <!-- 
+        <header> is used to contain introductory content.
+        It improves accessibility by clearly defining the page header.
+    -->
+    <header>
+        <h1>Harshavardhan Sarjerao Desai</h1>
+        <p>Computer Science Student | Aspiring Software Engineer</p>
+
+        <!-- 
+            <nav> defines a navigation block.
+            Screen readers recognize this as navigation automatically.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+        <main> represents the primary content of the page.
+        Only one <main> element should exist per page.
+    -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <!-- 
+                <article> is used for independent, self-contained content.
+                This helps search engines and assistive tools understand structure.
+            -->
+            <article>
+                <img 
+                    src="profile.jpg" 
+                    alt="Profile photo of Harshavardhan Desai"
+                    width="150"
+                >
+
+                <p>
+                    I am a passionate Computer Science student with a strong interest in
+                    web development, data structures, and problem-solving. I enjoy learning
+                    new technologies and building efficient, accessible applications.
+                </p>
+            </article>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <article>
+                <h3>Bachelor of Engineering in Computer Science</h3>
+                <p>
+                    XYZ College of Engineering<br>
+                    Expected Graduation: 2026
+                </p>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <!-- 
+                <ul> and <li> are used for lists instead of line breaks,
+                improving semantic meaning and accessibility.
+            -->
+            <ul>
+                <li>HTML5 & Semantic Web Design</li>
+                <li>CSS & Responsive Layouts</li>
+                <li>C / C++ Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Basic JavaScript</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+
+            <!-- 
+                <address> is a semantic element specifically designed
+                for contact-related information.
+            -->
+            <address>
+                <p>Email: <a href="mailto:harsha@example.com">harsha@example.com</a></p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Maharashtra, India</p>
+            </address>
+        </section>
+
+    </main>
+
+    <!-- 
+        <footer> contains footer information.
+        Typically includes copyright or author details.
+    -->
+    <footer>
+        <p>&copy; 2026 Harshavardhan Desai. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
