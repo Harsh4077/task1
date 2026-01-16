@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #1f2933;
+    color: #ffffff;
+    padding: 20px;          /* Padding creates space inside the header */
+    margin-bottom: 20px;   /* Margin separates header from main content */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;      /* Remove default bullets */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;    /* Margin creates space between links */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main content area */
+main {
+    padding: 20px;         /* Padding creates space inside main */
+}
+
+/* Section styling to demonstrate box model */
+section {
+    background-color: #ffffff;
+    padding: 20px;         /* Space inside section (content → padding) */
+    margin-bottom: 20px;   /* Space outside section (margin) */
+    border: 1px solid #ddd; /* Border visualizes the box boundary */
+    border-radius: 5px;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Skills list styling */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Profile image styling */
+img {
+    border: 2px solid #ccc; /* Border helps visualize image box */
+    padding: 5px;           /* Padding around image */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #1f2933;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+}
