@@ -2,104 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Ensures proper rendering and touch zooming on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshavardhan Desai | Flexbox Profile</title>
 
-    <title>Personal Profile | Harshavardhan Desai</title>
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- 
-        <header> is used to contain introductory content.
-        It improves accessibility by clearly defining the page header.
-    -->
-    <header>
-        <h1>Harshavardhan Sarjerao Desai</h1>
-        <p>Computer Science Student | Aspiring Software Engineer</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Harshavardhan Sarjerao Desai</h1>
+            <p>Computer Science Student | Web Developer</p>
+        </div>
 
-        <!-- 
-            <nav> defines a navigation block.
-            Screen readers recognize this as navigation automatically.
-        -->
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <!-- Navigation using Flexbox -->
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- 
-        <main> represents the primary content of the page.
-        Only one <main> element should exist per page.
-    -->
     <main>
 
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-
-            <!-- 
-                <article> is used for independent, self-contained content.
-                This helps search engines and assistive tools understand structure.
-            -->
-            <article>
-                <img 
-                    src="profile.jpg" 
-                    alt="Profile photo of Harshavardhan Desai"
-                    width="150"
-                >
-
+        <section id="about" class="section about">
+            <img src="profile.jpg" alt="Profile photo of Harshavardhan Desai">
+            <div>
+                <h2>About Me</h2>
                 <p>
-                    I am a passionate Computer Science student with a strong interest in
-                    web development, data structures, and problem-solving. I enjoy learning
-                    new technologies and building efficient, accessible applications.
+                    I am a Computer Science student passionate about modern web
+                    development, clean UI design, and building responsive applications
+                    using industry-standard practices.
                 </p>
-            </article>
+            </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education">
+        <section id="education" class="section">
             <h2>Education</h2>
 
-            <article>
-                <h3>Bachelor of Engineering in Computer Science</h3>
-                <p>
-                    XYZ College of Engineering<br>
-                    Expected Graduation: 2026
-                </p>
-            </article>
+            <!-- Card container using Flexbox -->
+            <div class="card-container">
+                <div class="card">
+                    <h3>Bachelor of Engineering – Computer Science</h3>
+                    <p>Pimpri chinchwad collage of engineering College of Engineering</p>
+                    <p>Graduation: 2027</p>
+                </div>
+
+                <div class="card">
+                    <h3>Higher Secondary Education</h3>
+                    <p>Science Stream</p>
+                    <p>Completed: 2022</p>
+                </div>
+            </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills">
+        <section id="skills" class="section">
             <h2>Skills</h2>
 
-            <!-- 
-                <ul> and <li> are used for lists instead of line breaks,
-                improving semantic meaning and accessibility.
-            -->
-            <ul>
-                <li>HTML5 & Semantic Web Design</li>
-                <li>CSS & Responsive Layouts</li>
-                <li>C / C++ Programming</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Basic JavaScript</li>
-            </ul>
+            <!-- Skills aligned using Flexbox -->
+            <div class="skills-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">Flexbox</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">C / C++</div>
+                <div class="skill">Git & GitHub</div>
+            </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Information</h2>
-
-            <!-- 
-                <address> is a semantic element specifically designed
-                for contact-related information.
-            -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
             <address>
                 <p>Email: <a href="mailto:harsha@example.com">harsha@example.com</a></p>
                 <p>Phone: +91 98765 43210</p>
@@ -109,13 +89,5 @@
 
     </main>
 
-    <!-- 
-        <footer> contains footer information.
-        Typically includes copyright or author details.
-    -->
     <footer>
-        <p>&copy; 2026 Harshavardhan Desai. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+        <p>&copy; 2026
